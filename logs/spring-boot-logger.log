@@ -1,0 +1,37 @@
+2021-04-23 00:18:29,442 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting SuperstoreApplication on LAPTOP-FP54SNAK with PID 16768 (E:\JWND\ecom\target\classes started by HP in E:\JWND\ecom)
+2021-04-23 00:18:29,447 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-04-23 00:18:29,576 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-23 00:18:29,577 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-23 00:18:31,391 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-04-23 00:18:31,568 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 143ms. Found 4 repository interfaces.
+2021-04-23 00:18:33,398 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f9d7647c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 00:18:36,775 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-04-23 00:18:36,845 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-23 00:18:36,863 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-04-23 00:18:36,864 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-04-23 00:18:40,159 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-04-23 00:18:40,160 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 10577 ms
+2021-04-23 00:18:43,298 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-04-23 00:18:43,941 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-04-23 00:18:44,373 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-04-23 00:18:44,904 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.10.Final}
+2021-04-23 00:18:44,907 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2021-04-23 00:18:45,359 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-04-23 00:18:45,867 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-23 00:18:48,219 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-23 00:18:50,303 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-04-23 00:18:51,722 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-23 00:18:52,194 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68b41139, org.springframework.security.web.context.SecurityContextPersistenceFilter@684c84ba, org.springframework.security.web.header.HeaderWriterFilter@5cab3caf, org.springframework.web.filter.CorsFilter@f236afe, org.springframework.security.web.authentication.logout.LogoutFilter@e2cdf20, com.example.demo.security.JWTAuthenticationFilter@38df5cf0, com.example.demo.security.JWTAuthenticationVerficationFilter@291627c8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ca2b762, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60fae7f8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6163d60a, org.springframework.security.web.session.SessionManagementFilter@394a21cd, org.springframework.security.web.access.ExceptionTranslationFilter@16073c34, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@371ebbf]
+2021-04-23 00:18:52,606 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 00:18:53,063 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-04-23 00:18:53,152 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-23 00:18:53,158 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started SuperstoreApplication in 24.921 seconds (JVM running for 26.405)
+2021-04-23 00:19:08,535 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-8] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-23 00:19:08,536 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-8] Initializing Servlet 'dispatcherServlet'
+2021-04-23 00:19:08,549 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-8] Completed initialization in 13 ms
+2021-04-23 00:19:08,819 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-8] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.demo.model.persistence.User> com.example.demo.controllers.UserController.createUser(com.example.demo.model.requests.CreateUserRequest): [Error in object 'createUserRequest': codes [PasswordMatches.createUserRequest,PasswordMatches]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.,]; arguments []; default message []]; default message [Passwords don't match]] ]
+2021-04-23 00:19:31,750 INFO com.example.demo.controllers.UserController [http-nio-8080-exec-7] New user test created
+2021-04-23 00:19:40,687 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8080-exec-4] HHH000397: Using ASTQueryTranslatorFactory
+2021-04-23 00:20:20,623 INFO com.example.demo.controllers.OrderController [http-nio-8080-exec-2] Order submitted for username test
