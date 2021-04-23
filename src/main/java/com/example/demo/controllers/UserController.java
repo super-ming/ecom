@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,6 +22,7 @@ import com.example.demo.model.requests.CreateUserRequest;
 
 import javax.validation.Valid;
 
+@Validated
 @RestController
 @RequestMapping("/api/user")
 public class UserController {
@@ -46,8 +48,14 @@ public class UserController {
 	}
 	
 	@PostMapping("/create")
-	public ResponseEntity<User> createUser(@Valid @RequestBody CreateUserRequest createUserRequest) {
-		User user = new User();
+	public ResponseEntity<User> createUser(@Valid @RequestBody CreateUserRequest createUserRequest) throws RuntimeException{
+		if(createUserRequest.getPassword() != createUserRequest.getConfirmPassword()){
+		    return ResponseEntity.badRequest().build();
+        }
+		if(createUserRequest.getPassword().length() < 4){
+            return ResponseEntity.badRequest().build();
+        }
+	    User user = new User();
 		user.setUsername(createUserRequest.getUsername());
 		user.setPassword(passwordEncoder.encode(createUserRequest.getPassword()));
 		Cart cart = new Cart();
