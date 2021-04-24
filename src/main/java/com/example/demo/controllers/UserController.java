@@ -5,12 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,6 +14,7 @@ import com.example.demo.model.persistence.User;
 import com.example.demo.model.persistence.repositories.CartRepository;
 import com.example.demo.model.persistence.repositories.UserRepository;
 import com.example.demo.model.requests.CreateUserRequest;
+import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.server.ResponseStatusException;
 
 import javax.validation.Valid;
@@ -52,18 +48,16 @@ public class UserController {
 	}
 	
 	@PostMapping("/create")
-	public ResponseEntity<User> createUser(@Valid @RequestBody CreateUserRequest createUserRequest) {
+	public @ResponseBody  ResponseEntity<User> createUser(@Valid @RequestBody CreateUserRequest createUserRequest) {
         log.debug("UserController.createUser for username {}", createUserRequest.getUsername());
 
 	    if(!createUserRequest.getPassword().equals(createUserRequest.getConfirmPassword())){
             log.error("Cannot create user {} because the password doesn't match confirmPassword.", createUserRequest.getUsername());
-		    String message = String.format("Password doesn't match confirmPassword.");
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, message);
+            return ResponseEntity.badRequest().build();
         }
 		if(createUserRequest.getPassword().length() < 4){
             log.error("Cannot create user {} because the password is too short.", createUserRequest.getUsername());
-            String message = String.format("Password is too short.");
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, message);
+            return ResponseEntity.badRequest().build();
         }
 	    User user = new User();
 		user.setUsername(createUserRequest.getUsername());
@@ -75,5 +69,4 @@ public class UserController {
         log.info("New user {} created", createUserRequest.getUsername());
 		return ResponseEntity.ok(user);
 	}
-	
 }

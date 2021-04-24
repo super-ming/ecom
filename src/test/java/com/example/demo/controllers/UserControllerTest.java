@@ -27,7 +27,7 @@ public class UserControllerTest {
     private LocalValidatorFactoryBean validator;
 
     @Before
-    public void setUp() {
+    public void init() {
         userController = new UserController();
         TestUtils.injectObjects(userController, "userRepository", userRepository);
         TestUtils.injectObjects(userController, "cartRepository", cartRepository);
@@ -46,7 +46,7 @@ public class UserControllerTest {
 
     @Test
     public void create_user_happy_path() {
-        when(encoder.encode("pass")).thenReturn("thisIsHashed");
+        when(encoder.encode("pass")).thenReturn("HashedPassword");
         CreateUserRequest r = new CreateUserRequest();
         r.setUsername("test");
         r.setPassword("pass");
@@ -58,7 +58,7 @@ public class UserControllerTest {
         assertNotNull(u);
         assertEquals(0, u.getId());
         assertEquals("test", u.getUsername());
-        assertEquals("thisIsHashed", u.getPassword());
+        assertEquals("HashedPassword", u.getPassword());
 
     }
 

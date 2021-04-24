@@ -20,7 +20,7 @@ public class ItemControllerTest {
     private ItemRepository itemRepository = mock(ItemRepository.class);
 
     @Before
-    public void setUp(){
+    public void init(){
         itemController = new ItemController();
         TestUtils.injectObjects(itemController, "itemRepository", itemRepository);
         Item item = new Item();
