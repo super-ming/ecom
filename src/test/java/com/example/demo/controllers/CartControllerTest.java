@@ -28,7 +28,7 @@ public class CartControllerTest {
     private ItemRepository itemRepository = mock(ItemRepository.class);
 
     @Before
-    public void setUp() {
+    public void init() {
         cartController = new CartController();
         TestUtils.injectObjects(cartController, "userRepository", userRepository);
         TestUtils.injectObjects(cartController, "cartRepository", cartRepository);

@@ -25,7 +25,7 @@ public class OrderControllerTest {
     private UserRepository userRepository = mock(UserRepository.class);
 
     @Before
-    public void setUp(){
+    public void init(){
         orderController = new OrderController();
         TestUtils.injectObjects(orderController, "orderRepository", orderRepository);
         TestUtils.injectObjects(orderController, "userRepository", userRepository);
