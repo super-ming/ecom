@@ -64,3 +64,216 @@
 2021-04-24 15:52:55,919 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8080-exec-8] HHH000397: Using ASTQueryTranslatorFactory
 2021-04-24 15:53:52,118 ERROR com.example.demo.controllers.OrderController [http-nio-8080-exec-6] Order cannot be submitted for user anotherUser , user not found
 2021-04-24 16:42:04,263 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=36m34s696ms498µs100ns).
+2021-04-24 21:48:38,951 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h48m33s925ms569µs100ns).
+2021-04-24 22:00:48,531 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting SuperstoreApplication on LAPTOP-FP54SNAK with PID 18376 (E:\JWND\ecom\target\classes started by HP in E:\JWND\ecom)
+2021-04-24 22:00:48,535 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-04-24 22:00:48,718 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-24 22:00:48,719 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-24 22:00:49,845 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-04-24 22:00:49,946 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 86ms. Found 4 repository interfaces.
+2021-04-24 22:00:50,825 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a32a09ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-24 22:00:51,915 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-04-24 22:00:51,942 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-24 22:00:51,963 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-04-24 22:00:51,964 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-04-24 22:00:52,297 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-04-24 22:00:52,299 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3580 ms
+2021-04-24 22:00:52,763 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-04-24 22:00:53,040 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-04-24 22:00:53,156 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-04-24 22:00:53,270 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.10.Final}
+2021-04-24 22:00:53,275 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2021-04-24 22:00:53,496 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-04-24 22:00:53,799 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-24 22:00:54,932 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 22:00:55,496 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-04-24 22:00:55,858 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-24 22:00:55,974 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c3822d8, org.springframework.security.web.context.SecurityContextPersistenceFilter@31dda3e2, org.springframework.security.web.header.HeaderWriterFilter@71c60e75, org.springframework.web.filter.CorsFilter@1772b8d7, org.springframework.security.web.authentication.logout.LogoutFilter@27043b65, com.example.demo.security.JWTAuthenticationFilter@1d8cac75, com.example.demo.security.JWTAuthenticationVerficationFilter@279e1ca3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c281300, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6da682b5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a2dc46a, org.springframework.security.web.session.SessionManagementFilter@4f889a4f, org.springframework.security.web.access.ExceptionTranslationFilter@fe67c4a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b0a5aa2]
+2021-04-24 22:00:56,230 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-24 22:00:56,504 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-04-24 22:00:56,566 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-24 22:00:56,569 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started SuperstoreApplication in 8.774 seconds (JVM running for 9.676)
+2021-04-24 22:01:20,546 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-10] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-24 22:01:20,547 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Initializing Servlet 'dispatcherServlet'
+2021-04-24 22:01:20,561 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Completed initialization in 13 ms
+2021-04-24 22:01:21,062 INFO com.example.demo.controllers.UserController [http-nio-8080-exec-10] New user test created
+2021-04-24 22:01:26,016 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8080-exec-8] HHH000397: Using ASTQueryTranslatorFactory
+2021-04-24 22:02:15,304 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting SuperstoreApplication on LAPTOP-FP54SNAK with PID 22848 (E:\JWND\ecom\target\classes started by HP in E:\JWND\ecom)
+2021-04-24 22:02:15,307 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-04-24 22:02:15,405 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-24 22:02:15,405 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-24 22:02:16,473 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-04-24 22:02:16,582 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 98ms. Found 4 repository interfaces.
+2021-04-24 22:02:17,466 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$21c00297] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-24 22:02:18,387 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-04-24 22:02:18,410 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-24 22:02:18,425 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-04-24 22:02:18,425 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-04-24 22:02:18,657 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-04-24 22:02:18,658 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3252 ms
+2021-04-24 22:02:18,932 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-04-24 22:02:19,176 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-04-24 22:02:19,271 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-04-24 22:02:19,357 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.10.Final}
+2021-04-24 22:02:19,360 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2021-04-24 22:02:19,570 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-04-24 22:02:19,808 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-24 22:02:20,889 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 22:02:21,490 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-04-24 22:02:21,864 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-24 22:02:21,994 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ae80b56, org.springframework.security.web.context.SecurityContextPersistenceFilter@18db8281, org.springframework.security.web.header.HeaderWriterFilter@4c4134aa, org.springframework.web.filter.CorsFilter@2015a58e, org.springframework.security.web.authentication.logout.LogoutFilter@fc8dfc6, com.example.demo.security.JWTAuthenticationFilter@65c6fe7c, com.example.demo.security.JWTAuthenticationVerficationFilter@45d836d4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@356e704, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76bafb39, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6fc03782, org.springframework.security.web.session.SessionManagementFilter@1d5824f7, org.springframework.security.web.access.ExceptionTranslationFilter@27093d2c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@234ce809]
+2021-04-24 22:02:22,222 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-24 22:02:22,479 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-04-24 22:02:22,534 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-24 22:02:22,544 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started SuperstoreApplication in 7.886 seconds (JVM running for 8.645)
+2021-04-24 22:02:31,566 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-24 22:02:31,567 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-04-24 22:02:31,580 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 13 ms
+2021-04-24 22:02:32,129 INFO com.example.demo.controllers.UserController [http-nio-8080-exec-2] New user test created
+2021-04-24 22:02:35,922 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8080-exec-3] HHH000397: Using ASTQueryTranslatorFactory
+2021-04-24 22:03:21,873 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting SuperstoreApplication on LAPTOP-FP54SNAK with PID 25300 (E:\JWND\ecom\target\classes started by HP in E:\JWND\ecom)
+2021-04-24 22:03:21,877 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-04-24 22:03:21,962 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-24 22:03:21,963 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-24 22:03:23,104 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-04-24 22:03:23,198 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 80ms. Found 4 repository interfaces.
+2021-04-24 22:03:23,986 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d0b8a118] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-24 22:03:24,915 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-04-24 22:03:24,938 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-24 22:03:24,957 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-04-24 22:03:24,958 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-04-24 22:03:25,220 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-04-24 22:03:25,220 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3255 ms
+2021-04-24 22:03:25,475 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-04-24 22:03:25,715 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-04-24 22:03:25,785 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-04-24 22:03:25,872 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.10.Final}
+2021-04-24 22:03:25,875 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2021-04-24 22:03:26,092 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-04-24 22:03:26,317 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-24 22:03:27,559 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 22:03:28,298 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-04-24 22:03:28,901 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-24 22:03:29,153 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5bfc0f64, org.springframework.security.web.context.SecurityContextPersistenceFilter@2fed4aa2, org.springframework.security.web.header.HeaderWriterFilter@17b93180, org.springframework.web.filter.CorsFilter@f3a6c8, org.springframework.security.web.authentication.logout.LogoutFilter@76cc65e8, com.example.demo.security.JWTAuthenticationFilter@307cc12b, com.example.demo.security.JWTAuthenticationVerficationFilter@29edf90c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59d1d72e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58caa354, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12d1447a, org.springframework.security.web.session.SessionManagementFilter@35d6f68a, org.springframework.security.web.access.ExceptionTranslationFilter@74e476e2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@53821535]
+2021-04-24 22:03:29,404 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-24 22:03:29,794 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-04-24 22:03:29,881 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-24 22:03:29,886 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started SuperstoreApplication in 8.675 seconds (JVM running for 9.438)
+2021-04-24 22:03:38,695 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-9] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-24 22:03:38,697 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-9] Initializing Servlet 'dispatcherServlet'
+2021-04-24 22:03:38,714 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-9] Completed initialization in 17 ms
+2021-04-24 22:03:39,260 INFO com.example.demo.controllers.UserController [http-nio-8080-exec-9] New user test created
+2021-04-24 22:03:42,846 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8080-exec-8] HHH000397: Using ASTQueryTranslatorFactory
+2021-04-24 22:05:00,806 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting SuperstoreApplication on LAPTOP-FP54SNAK with PID 388 (E:\JWND\ecom\target\classes started by HP in E:\JWND\ecom)
+2021-04-24 22:05:00,810 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-04-24 22:05:00,942 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-24 22:05:00,943 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-24 22:05:02,018 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-04-24 22:05:02,106 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 79ms. Found 4 repository interfaces.
+2021-04-24 22:05:02,949 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c4aa99f8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-24 22:05:03,856 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-04-24 22:05:03,882 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-24 22:05:03,899 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-04-24 22:05:03,900 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-04-24 22:05:04,141 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-04-24 22:05:04,141 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3197 ms
+2021-04-24 22:05:04,398 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-04-24 22:05:04,663 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-04-24 22:05:04,746 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-04-24 22:05:04,822 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.10.Final}
+2021-04-24 22:05:04,827 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2021-04-24 22:05:05,036 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-04-24 22:05:05,203 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-24 22:05:06,254 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 22:05:06,949 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-04-24 22:05:07,300 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-24 22:05:07,418 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d12d8b4, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f7325bc, org.springframework.security.web.header.HeaderWriterFilter@7c614007, org.springframework.web.filter.CorsFilter@668b40d5, org.springframework.security.web.authentication.logout.LogoutFilter@156203c2, com.example.demo.security.JWTAuthenticationFilter@575afbbd, com.example.demo.security.JWTAuthenticationVerficationFilter@60d71165, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71b7b727, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39ead6d8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b9ba2b3, org.springframework.security.web.session.SessionManagementFilter@6db176c5, org.springframework.security.web.access.ExceptionTranslationFilter@31a1ef65, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7bf54881]
+2021-04-24 22:05:07,629 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-24 22:05:07,906 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-04-24 22:05:07,994 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-24 22:05:08,008 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started SuperstoreApplication in 7.939 seconds (JVM running for 8.675)
+2021-04-24 22:05:22,453 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-10] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-24 22:05:22,454 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Initializing Servlet 'dispatcherServlet'
+2021-04-24 22:05:22,467 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Completed initialization in 12 ms
+2021-04-24 22:05:22,722 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8080-exec-10] HHH000397: Using ASTQueryTranslatorFactory
+2021-04-24 22:05:23,035 ERROR com.example.demo.security.JWTAuthenticationFilter [http-nio-8080-exec-10] Authentication attempt failed. Bad credentials.
+2021-04-24 22:05:50,739 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting SuperstoreApplication on LAPTOP-FP54SNAK with PID 25548 (E:\JWND\ecom\target\classes started by HP in E:\JWND\ecom)
+2021-04-24 22:05:50,744 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-04-24 22:05:50,972 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-24 22:05:50,972 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-24 22:05:52,857 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-04-24 22:05:52,964 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 93ms. Found 4 repository interfaces.
+2021-04-24 22:05:54,142 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9f5fdbf4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-24 22:05:55,217 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-04-24 22:05:55,242 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-24 22:05:55,261 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-04-24 22:05:55,262 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-04-24 22:05:55,523 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-04-24 22:05:55,524 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4551 ms
+2021-04-24 22:05:56,034 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-04-24 22:05:56,322 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-04-24 22:05:56,409 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-04-24 22:05:56,501 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.10.Final}
+2021-04-24 22:05:56,504 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2021-04-24 22:05:56,747 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-04-24 22:05:56,935 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-24 22:05:58,199 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 22:05:58,823 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-04-24 22:05:59,182 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-24 22:05:59,289 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@421a584c, org.springframework.security.web.context.SecurityContextPersistenceFilter@6fa5f563, org.springframework.security.web.header.HeaderWriterFilter@10778027, org.springframework.web.filter.CorsFilter@42c1a993, org.springframework.security.web.authentication.logout.LogoutFilter@5b859be5, com.example.demo.security.JWTAuthenticationFilter@2a9c7d85, com.example.demo.security.JWTAuthenticationVerficationFilter@17f1afcf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48ff7a68, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@399abdc6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b95d45, org.springframework.security.web.session.SessionManagementFilter@5c21161, org.springframework.security.web.access.ExceptionTranslationFilter@5a47b70b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6122cca8]
+2021-04-24 22:05:59,519 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-24 22:05:59,835 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-04-24 22:05:59,894 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-24 22:05:59,899 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started SuperstoreApplication in 9.796 seconds (JVM running for 10.495)
+2021-04-24 22:06:05,949 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-24 22:06:05,950 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-24 22:06:05,980 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 29 ms
+2021-04-24 22:06:06,604 INFO com.example.demo.controllers.UserController [http-nio-8080-exec-1] New user test created
+2021-04-24 22:06:10,532 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8080-exec-3] HHH000397: Using ASTQueryTranslatorFactory
+2021-04-24 22:06:10,815 ERROR com.example.demo.security.JWTAuthenticationFilter [http-nio-8080-exec-3] Authentication attempt failed. Bad credentials.
+2021-04-24 22:06:45,784 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting SuperstoreApplication on LAPTOP-FP54SNAK with PID 9496 (E:\JWND\ecom\target\classes started by HP in E:\JWND\ecom)
+2021-04-24 22:06:45,789 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-04-24 22:06:45,884 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-24 22:06:45,884 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-24 22:06:47,032 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-04-24 22:06:47,173 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 123ms. Found 4 repository interfaces.
+2021-04-24 22:06:48,218 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2c8a449c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-24 22:06:49,310 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-04-24 22:06:49,339 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-24 22:06:49,358 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-04-24 22:06:49,359 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-04-24 22:06:49,565 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-04-24 22:06:49,566 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3682 ms
+2021-04-24 22:06:49,823 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-04-24 22:06:50,047 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-04-24 22:06:50,140 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-04-24 22:06:50,231 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.10.Final}
+2021-04-24 22:06:50,234 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2021-04-24 22:06:50,453 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-04-24 22:06:50,646 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-24 22:06:51,916 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 22:06:52,769 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-04-24 22:06:53,267 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-24 22:06:53,458 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d556031, org.springframework.security.web.context.SecurityContextPersistenceFilter@275f677a, org.springframework.security.web.header.HeaderWriterFilter@78bb3cf4, org.springframework.web.filter.CorsFilter@31be1f4c, org.springframework.security.web.authentication.logout.LogoutFilter@7ed115bb, com.example.demo.security.JWTAuthenticationFilter@576fad52, com.example.demo.security.JWTAuthenticationVerficationFilter@4f35e3a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70414596, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2624c282, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7251f27d, org.springframework.security.web.session.SessionManagementFilter@149118ce, org.springframework.security.web.access.ExceptionTranslationFilter@9a18fc2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4ca2b30f]
+2021-04-24 22:06:53,813 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-24 22:06:54,206 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-04-24 22:06:54,277 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-24 22:06:54,283 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started SuperstoreApplication in 9.174 seconds (JVM running for 9.932)
+2021-04-24 22:07:05,016 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-10] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-24 22:07:05,017 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Initializing Servlet 'dispatcherServlet'
+2021-04-24 22:07:05,041 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Completed initialization in 23 ms
+2021-04-24 22:07:05,586 INFO com.example.demo.controllers.UserController [http-nio-8080-exec-10] New user test created
+2021-04-24 22:07:11,691 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8080-exec-8] HHH000397: Using ASTQueryTranslatorFactory
+2021-04-24 22:07:11,983 ERROR com.example.demo.security.JWTAuthenticationFilter [http-nio-8080-exec-8] Authentication attempt failed. Bad credentials.
